@@ -1,5 +1,10 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" :width :height viewBox="0 0 256 256">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    :width
+    :height
+    viewBox="0 0 256 256"
+  >
     <path
       d="M128 0c70.692 0 128 57.308 128 128s-57.308 128-128 128S0 198.692 0 128S57.308 0 128 0"
     />
@@ -21,5 +26,5 @@ const { width, height } = defineProps({
     type: Number,
     default: 16,
   },
-});
+})
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto max-w-2xl m-8">
+  <div class="m-8 mx-auto max-w-2xl">
     <NuxtRouteAnnouncer />
     <ProfileCard>
       <NuxtPage />
@@ -26,6 +26,11 @@ onMounted(() => {
 
 *, ::before, ::after {
   box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
 }
 
 html {

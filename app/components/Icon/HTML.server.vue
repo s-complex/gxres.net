@@ -1,10 +1,18 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" :width :height viewBox="0 0 256 361">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    :width
+    :height
+    viewBox="0 0 256 361"
+  >
     <path
       fill="#E44D26"
       d="m255.555 70.766l-23.241 260.36l-104.47 28.962l-104.182-28.922L.445 70.766z"
     />
-    <path fill="#F16529" d="m128 337.95l84.417-23.403l19.86-222.49H128z" />
+    <path
+      fill="#F16529"
+      d="m128 337.95l84.417-23.403l19.86-222.49H128z"
+    />
     <path
       fill="#EBEBEB"
       d="M82.82 155.932H128v-31.937H47.917l.764 8.568l7.85 88.01H128v-31.937H85.739zm7.198 80.61h-32.06l4.474 50.146l65.421 18.16l.147-.04V271.58l-.14.037l-35.568-9.604z"
@@ -29,5 +37,5 @@ const { width, height } = defineProps({
     type: Number,
     default: 16,
   },
-});
+})
 </script>

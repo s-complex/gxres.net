@@ -1,5 +1,10 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" :width :height viewBox="0 0 256 256">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    :width
+    :height
+    viewBox="0 0 256 256"
+  >
     <defs>
       <linearGradient
         id="logosNextjsIcon0"
@@ -8,8 +13,15 @@
         y1="56.385%"
         y2="96.08%"
       >
-        <stop offset="0%" stop-color="#FFF" />
-        <stop offset="100%" stop-color="#FFF" stop-opacity="0" />
+        <stop
+          offset="0%"
+          stop-color="#FFF"
+        />
+        <stop
+          offset="100%"
+          stop-color="#FFF"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="logosNextjsIcon1"
@@ -18,16 +30,35 @@
         y1="0%"
         y2="73.438%"
       >
-        <stop offset="0%" stop-color="#FFF" />
-        <stop offset="100%" stop-color="#FFF" stop-opacity="0" />
+        <stop
+          offset="0%"
+          stop-color="#FFF"
+        />
+        <stop
+          offset="100%"
+          stop-color="#FFF"
+          stop-opacity="0"
+        />
       </linearGradient>
-      <circle id="logosNextjsIcon2" cx="128" cy="128" r="128" />
+      <circle
+        id="logosNextjsIcon2"
+        cx="128"
+        cy="128"
+        r="128"
+      />
     </defs>
-    <mask id="logosNextjsIcon3" fill="#fff">
+    <mask
+      id="logosNextjsIcon3"
+      fill="#fff"
+    >
       <use href="#logosNextjsIcon2" />
     </mask>
     <g mask="url(#logosNextjsIcon3)">
-      <circle cx="128" cy="128" r="128" />
+      <circle
+        cx="128"
+        cy="128"
+        r="128"
+      />
       <path
         fill="url(#logosNextjsIcon0)"
         d="M212.634 224.028L98.335 76.8H76.8v102.357h17.228V98.68L199.11 234.446a128 128 0 0 0 13.524-10.418"
@@ -50,5 +81,5 @@ const { width, height } = defineProps({
     type: Number,
     default: 16,
   },
-});
+})
 </script>

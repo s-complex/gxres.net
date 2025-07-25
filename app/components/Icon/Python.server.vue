@@ -1,5 +1,10 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" :width :height viewBox="0 0 256 255">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    :width
+    :height
+    viewBox="0 0 256 255"
+  >
     <defs>
       <linearGradient
         id="logosPython0"
@@ -8,8 +13,14 @@
         y1="12.039%"
         y2="78.201%"
       >
-        <stop offset="0%" stop-color="#387EB8" />
-        <stop offset="100%" stop-color="#366994" />
+        <stop
+          offset="0%"
+          stop-color="#387EB8"
+        />
+        <stop
+          offset="100%"
+          stop-color="#366994"
+        />
       </linearGradient>
       <linearGradient
         id="logosPython1"
@@ -18,8 +29,14 @@
         y1="20.579%"
         y2="88.429%"
       >
-        <stop offset="0%" stop-color="#FFE052" />
-        <stop offset="100%" stop-color="#FFC331" />
+        <stop
+          offset="0%"
+          stop-color="#FFE052"
+        />
+        <stop
+          offset="100%"
+          stop-color="#FFC331"
+        />
       </linearGradient>
     </defs>
     <path
@@ -43,5 +60,5 @@ const { width, height } = defineProps({
     type: Number,
     default: 16,
   },
-});
+})
 </script>

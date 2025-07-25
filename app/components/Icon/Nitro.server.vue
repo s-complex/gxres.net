@@ -1,5 +1,10 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" :width :height viewBox="0 0 32 32">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    :width
+    :height
+    viewBox="0 0 32 32"
+  >
     <g fill="none">
       <g clip-path="url(#unjsNitro4)">
         <path
@@ -28,7 +33,10 @@
             d="M16 32.001c8.837 0 16-7.163 16-16s-7.163-16-16-16s-16 7.163-16 16s7.163 16 16 16"
           />
         </mask>
-        <g filter="url(#unjsNitro5)" mask="url(#unjsNitro0)">
+        <g
+          filter="url(#unjsNitro5)"
+          mask="url(#unjsNitro0)"
+        >
           <path
             fill="#fff"
             d="M.89 10.741a16 16 0 1 0 30.365.434l-4.652 1.471a11.12 11.12 0 1 1-21.106-.3z"
@@ -45,8 +53,14 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#31B2F3" />
-          <stop offset=".474" stop-color="#F27CEC" />
-          <stop offset="1" stop-color="#FD6641" />
+          <stop
+            offset=".474"
+            stop-color="#F27CEC"
+          />
+          <stop
+            offset="1"
+            stop-color="#FD6641"
+          />
         </radialGradient>
         <radialGradient
           id="unjsNitro2"
@@ -57,8 +71,14 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#31B2F3" />
-          <stop offset=".474" stop-color="#F27CEC" />
-          <stop offset="1" stop-color="#FD6641" />
+          <stop
+            offset=".474"
+            stop-color="#F27CEC"
+          />
+          <stop
+            offset="1"
+            stop-color="#FD6641"
+          />
         </radialGradient>
         <radialGradient
           id="unjsNitro3"
@@ -69,11 +89,20 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#F27CEC" />
-          <stop offset=".484" stop-color="#31B2F3" />
-          <stop offset="1" stop-color="#7D7573" />
+          <stop
+            offset=".484"
+            stop-color="#31B2F3"
+          />
+          <stop
+            offset="1"
+            stop-color="#7D7573"
+          />
         </radialGradient>
         <clipPath id="unjsNitro4">
-          <path fill="#fff" d="M0 0h32v32H0z" />
+          <path
+            fill="#fff"
+            d="M0 0h32v32H0z"
+          />
         </clipPath>
         <filter
           id="unjsNitro5"
@@ -84,8 +113,15 @@
           color-interpolation-filters="sRGB"
           filterUnits="userSpaceOnUse"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
-          <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feFlood
+            flood-opacity="0"
+            result="BackgroundImageFix"
+          />
+          <feBlend
+            in="SourceGraphic"
+            in2="BackgroundImageFix"
+            result="shape"
+          />
           <feGaussianBlur
             result="effect1_foregroundBlur_7_821"
             stdDeviation="5"
@@ -106,5 +142,5 @@ const { width, height } = defineProps({
     type: Number,
     default: 16,
   },
-});
+})
 </script>
