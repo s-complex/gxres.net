@@ -1,5 +1,5 @@
 <template>
-  <div class="m-8 mx-auto max-w-2xl">
+  <div class="p-4 mx-auto max-w-2xl">
     <NuxtRouteAnnouncer />
     <ProfileCard>
       <NuxtPage />
