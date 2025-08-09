@@ -17,7 +17,7 @@
     </p>
     <p>I am learning and trying things that interest me.</p>
     <br>
-    <p class="text-center">
+    <p>
       <span
         v-for="(link, idx) in linkList"
         :key="link.name"

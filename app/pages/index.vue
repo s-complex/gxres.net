@@ -17,7 +17,7 @@
     </p>
     <p>正在学习并尝试我所感兴趣的东西。</p>
     <br>
-    <p class="text-center">
+    <p>
       <span
         v-for="(link, idx) in linkList"
         :key="link.name"
