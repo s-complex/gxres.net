@@ -9,6 +9,9 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/webp', href: 'https://library.gxres.net/images/icons/favicon.webp' },
         { rel: 'preconnect', href: 'https://library.gxres.net', crossorigin: '' },
       ],
+      meta: [
+        { name: 'description', content: 'Homepage of Restent Ou.' },
+      ],
     },
   },
   compatibilityDate: '2025-07-15',

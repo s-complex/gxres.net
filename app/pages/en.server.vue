@@ -1,9 +1,9 @@
 <template>
-  <section>
+  <section class="content">
     <h1>Restent Ou</h1>
-    <p>又名 SliverRiver, undefinedR2 或 "Dongpu Ou"。</p>
+    <p>Known as SliverRiver, undefinedR2 and "Dongpu Ou".</p>
     <p>
-      曾为
+      Had contributed to
       <span
         v-for="(project, idx) in projectsList"
         :key="project.name"
@@ -13,9 +13,9 @@
           target="_blank"
         >{{ project.name }}</NuxtLink>
         <span v-if="idx < projectsList.length - 1">, </span>
-      </span> 做了点微小贡献。
+      </span>.
     </p>
-    <p>正在学习并尝试我所感兴趣的东西。</p>
+    <p>I am learning and trying things that interest me.</p>
     <br>
     <p>
       <span
@@ -58,22 +58,22 @@ const projectsList = [
 
 const linkList = [
   {
-    name: '博客',
+    name: 'blog',
     url: 'https://blog.gxres.net',
   },
   {
-    name: '朋友们',
+    name: 'friends',
     url: 'https://library.gxres.net/links/list',
   },
   {
-    name: '联系我',
+    name: 'find me',
     url: 'https://library.gxres.net/find-me',
   },
 ]
 
 useHead({
   htmlAttrs: {
-    lang: 'zh-CN',
+    lang: 'en',
   },
 })
 </script>

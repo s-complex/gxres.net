@@ -8,9 +8,10 @@
           width="256"
           height="256"
           src="https://library.gxres.net/images/avatars/real.webp"
+          alt="Restent's avatar"
         />
       </div>
-      <NuxtPage class="content" />
+      <NuxtPage />
     </div>
   </div>
 </template>
@@ -39,12 +40,6 @@ onMounted(() => {
 ::before,
 ::after {
   box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100%;
-  overflow-x: hidden;
 }
 
 html {
