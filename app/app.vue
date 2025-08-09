@@ -4,7 +4,7 @@
     <div class="p-8 gap-4 grid grid-cols-1 place-items-center min-h-svh md:grid-cols-2">
       <div>
         <NuxtImg
-          loading="lazy"
+          preload
           decoding="async"
           class="rounded-full"
           width="256"
