@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto max-w-7xl">
     <NuxtRouteAnnouncer />
-    <div class="gap-4 grid grid-cols-1 place-items-center min-h-svh md:grid-cols-2">
+    <div class="p-8 gap-4 grid grid-cols-1 place-items-center min-h-svh md:grid-cols-2">
       <div>
         <NuxtImg
           loading="lazy"
@@ -73,6 +73,7 @@ a {
   h1 {
     font-size: 2.25rem;
     line-height: calc(2.5 / 2.25);
+    text-align: center;
   }
 
   h2 {
@@ -89,6 +90,7 @@ a {
   }
   p:last-child {
     margin-bottom: 0;
+    text-align: center;
   }
 }
 </style>
