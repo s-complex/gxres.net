@@ -1,7 +1,5 @@
-import { defineConfig, presetWind4 } from 'unocss'
+import { defineConfig, presetMini } from 'unocss'
 
 export default defineConfig({
-  presets: [presetWind4({
-    dark: 'media',
-  })],
+  presets: [presetMini()],
 })

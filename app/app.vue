@@ -1,9 +1,17 @@
 <template>
-  <div class="p-4 mx-auto max-w-2xl">
+  <div class="mx-auto max-w-7xl">
     <NuxtRouteAnnouncer />
-    <ProfileCard>
-      <NuxtPage />
-    </ProfileCard>
+    <div class="gap-4 grid grid-cols-1 place-items-center min-h-svh md:grid-cols-2">
+      <div>
+        <NuxtImg
+          class="rounded-full"
+          width="256"
+          height="256"
+          src="https://library.gxres.net/images/avatars/real.webp"
+        />
+      </div>
+      <NuxtPage class="content" />
+    </div>
   </div>
 </template>
 
@@ -12,6 +20,9 @@ onMounted(() => {
   const lang = navigator.language
   if (!lang.startsWith('zh')) {
     navigateTo('/en')
+  }
+  else {
+    navigateTo('/')
   }
 })
 </script>
@@ -24,18 +35,21 @@ onMounted(() => {
   font: inherit;
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   overflow-x: hidden;
 }
 
 html {
   font-family: system-ui, sans-serif;
-  color-scheme: light dark;
+  color-scheme: dark;
 }
 
 body {
@@ -43,27 +57,41 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  &::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    backdrop-filter: brightness(50%);
+    z-index: -1;
+  }
 }
 
 a {
-  color: rgb(59 130 246);
+  color: oklch(70.7% 0.165 254.624);
   text-decoration-line: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-image: url("https://library.gxres.net/images/bg.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.content {
+  h1 {
+    font-size: 2.25rem;
+    line-height: calc(2.5 / 2.25);
+  }
 
-    &::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      backdrop-filter: brightness(50%);
-      z-index: -1;
-    }
+  h2 {
+    font-size: 1.5rem;
+    line-height: calc(2 / 1.5);
+  }
+  h1, h2 {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    margin-top: .75rem;
+    margin-bottom: 1rem;
+  }
+  p:last-child {
+    margin-bottom: 0;
   }
 }
 </style>
