@@ -35,7 +35,7 @@ html {
 }
 
 a {
-  color: #3273dc;
+  --apply: 'text-blue-600 dark:text-blue-400'
   --apply: 'no-underline'
 }
 

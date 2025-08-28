@@ -4,6 +4,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'en',
+      },
       link: [
         { rel: 'preconnect', href: 'https://library.gxres.net', crossorigin: '' },
         { rel: 'icon', type: 'image/webp', href: 'https://library.gxres.net/images/icons/favicon.webp' },
