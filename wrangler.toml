@@ -1,0 +1,10 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "blog"
+compatibility_date = "2023-05-18"
+assets = { directory = "./.output/public" }
+
+# Workers Logs
+# Docs: https://developers.cloudflare.com/workers/observability/logs/workers-logs/
+# Configuration: https://developers.cloudflare.com/workers/observability/logs/workers-logs/#enable-workers-logs
+[observability]
+enabled = true
