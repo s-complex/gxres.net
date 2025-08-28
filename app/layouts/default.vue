@@ -1,5 +1,5 @@
 <template>
-  <div class="grid gap-3">
+  <div class="grid gap-6">
     <SiteHeader />
     <section class="content">
       <slot />

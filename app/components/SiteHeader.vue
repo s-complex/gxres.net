@@ -33,6 +33,8 @@
 <script lang="ts" setup>
 const navLinks = [
   { name: 'about', to: '/' },
-  { name: 'sites', to: '/sites' },
+  { name: 'posts', to: '/posts' },
+  { name: 'find me', to: '/find-me' },
+  { name: 'friends', to: '/friends' },
 ]
 </script>

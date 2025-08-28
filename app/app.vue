@@ -64,5 +64,9 @@ a {
   em {
     --apply: 'italic'
   }
+
+  ul {
+    --apply: 'grid gap-3'
+  }
 }
 </style>
