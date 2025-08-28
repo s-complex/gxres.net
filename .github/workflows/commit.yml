@@ -1,0 +1,20 @@
+name: New commit event
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  AutoNotify:
+    name: Send message
+    runs-on: ubuntu-latest
+    steps:
+      - uses: appleboy/telegram-action@master
+        with:
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          to: ${{ secrets.TELEGRAM_TO }}
+          message: |
+            ${{ github.repository }} has a new changes.
+
+            - Committer: ${{ github.actor }}
+            - Commit message: ${{ github.event.commits[0].message }}
