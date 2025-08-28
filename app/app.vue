@@ -35,8 +35,7 @@ html {
 }
 
 a {
-  --apply: 'text-blue-600 dark:text-blue-400'
-  --apply: 'no-underline'
+  --apply: 'text-blue-600 dark:text-blue-400 no-underline'
 }
 
 .content {
