@@ -4,15 +4,14 @@
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
-
   </div>
 </template>
 
 <script setup lang="ts">
 useHead({
   bodyAttrs: {
-    class: ['bg-slate-100', 'dark:bg-slate-900']
-  }
+    class: ['bg-slate-100', 'dark:bg-slate-900'],
+  },
 })
 </script>
 
