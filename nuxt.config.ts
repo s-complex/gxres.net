@@ -27,15 +27,4 @@ export default defineNuxtConfig({
   experimental: {
     componentIslands: true
   },
-  nitro: {
-    cloudflare: {
-      wrangler: {
-        name: 'homepage',
-        compatibility_date: '2025-08-28',
-        assets: {
-          directory: './.output/public'
-        }
-      }
-    }
-  }
 })
