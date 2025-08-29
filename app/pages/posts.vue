@@ -4,7 +4,7 @@
     <ul>
       <li v-for="item in data.items" :key="item.id">
         <NuxtLink :href="item.url" external>{{ item.title }}</NuxtLink>
-        <br></br>
+        <br />
         <time class="text-sm" :datetime="item.date_modified.toString()">{{ formatDate(item.date_modified) }}</time>
       </li>
     </ul>
@@ -38,7 +38,13 @@ type FeedResponse = {
 </script>
 
 <script lang="ts" setup>
-const { data } = await useFetch<FeedResponse>('https://blog.gxres.net/latest-posts.json')
+import { ref, onMounted } from 'vue'
+
+const data = ref<FeedResponse | null>(null)
+
+onMounted(async () => {
+  data.value = await $fetch<FeedResponse>('https://blog.gxres.net/latest-posts.json')
+})
 
 function formatDate(_date: string) {
   const date = new Date(_date)
