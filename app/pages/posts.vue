@@ -40,8 +40,8 @@ type FeedResponse = {
 <script lang="ts" setup>
 const { data } = await useFetch<FeedResponse>('https://blog.gxres.net/latest-posts.json')
 
-function formatDate(dateStr: string) {
-  const date = new Date(dateStr)
+function formatDate(_date: string) {
+  const date = new Date(_date)
   return date.toLocaleDateString('en', {
     year: 'numeric',
     month: 'long',

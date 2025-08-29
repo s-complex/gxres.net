@@ -8,4 +8,6 @@ Made a few contributions to [LittleSkin](https://littleskin.cn), [14Cloud](https
 
 Building new things with [Node.js](https://nodejs.org), [Vue](https://vuejs.org), [Svelte](https://svelte.dev) and [Nitro](https://nitro.build). I am considering learning Rust or Go in the future.
 
-I love rhythm games, Minecraft, foods and photography.
+Love rhythm games, Minecraft, foods and photography.
+
+Always express my own opinions and emotions. They are not related to other people and organizations.
