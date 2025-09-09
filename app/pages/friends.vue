@@ -20,10 +20,8 @@ interface ListDataItem {
   link: string;
 }
 
-const data = ref<Record<string, ListDataItem> | null>(null)
-
-onMounted(async () => {
-  const res = await fetch('https://api.insli.cc/linklist/random')
-  data.value = await res.json()
+const { data } = await useFetch<Record<string, ListDataItem>>('https://api.insli.cc/linklist/random', {
+  lazy: true,
+  server: false
 })
 </script>

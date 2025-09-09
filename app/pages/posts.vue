@@ -15,8 +15,8 @@
   <p>Read more at <NuxtLink href="https://blog.gxres.net" external>Restent's Notebook</NuxtLink>.</p>
 </template>
 
-<script lang="ts">
-type FeedItem = {
+<script lang="ts" setup>
+interface FeedItem {
   id: string;
   content_html: string;
   url: string;
@@ -30,20 +30,15 @@ type FeedItem = {
   };
 };
 
-type FeedResponse = {
+interface FeedResponse {
   version: string;
   title: string;
   items: FeedItem[];
 };
-</script>
 
-<script lang="ts" setup>
-import { ref, onMounted } from 'vue'
-
-const data = ref<FeedResponse | null>(null)
-
-onMounted(async () => {
-  data.value = await $fetch<FeedResponse>('https://blog.gxres.net/latest-posts.json')
+const { data } = await useFetch<FeedResponse>('https://blog.gxres.net/latest-posts.json', {
+  lazy: true,
+  server: false
 })
 
 function formatDate(_date: string) {

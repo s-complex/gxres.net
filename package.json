@@ -13,15 +13,26 @@
   "dependencies": {
     "@nuxt/eslint": "1.9.0",
     "@nuxt/image": "1.11.0",
-    "eslint": "^9.34.0",
-    "nuxt": "^4.0.3",
-    "vue": "^3.5.20",
+    "eslint": "^9.35.0",
+    "nuxt": "^4.1.1",
+    "vue": "^3.5.21",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@unocss/eslint-config": "^66.4.2",
-    "@unocss/nuxt": "^66.4.2",
+    "@unocss/eslint-config": "^66.5.1",
+    "@unocss/nuxt": "^66.5.1",
     "nuxt-compile-markdown": "^0.1.1",
-    "unocss": "^66.4.2"
+    "unocss": "^66.5.1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild",
+      "sharp",
+      "unrs-resolver"
+    ],
+    "overrides": {
+      "vite": "npm:rolldown-vite@latest"
+    }
   }
 }
